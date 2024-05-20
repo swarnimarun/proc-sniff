@@ -1,0 +1,18 @@
+[package]
+name = "proc-sniff"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "snif"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.86"
+clap = { version = "4.5.4", features = ["string", "env", "derive"] }
+netstat = "0.7.0"
+proc-maps = "0.3.2"
+serde = { version = "1.0.202", features = ["derive"] }
+serde_json = "1.0.117"
+sysinfo = "0.30.12"
+toml = "0.8.13"
